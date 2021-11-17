@@ -163,7 +163,7 @@ alias gitp='git log --oneline --all --graph --decorate --branches'
 alias back='git checkout -'
 alias goc='git checkout -b'
 alias tinker="artisan tinker"
-alias compb="composer self-update --rollback"
+alias outdated="composer outdated --direct"
 
 # Arbory/Laravel commands
 alias cc='php artisan cache:clear && php artisan config:clear'
