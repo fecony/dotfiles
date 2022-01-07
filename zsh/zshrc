@@ -162,6 +162,7 @@ alias gcz='git add . && git cz'
 alias gitp='git log --oneline --all --graph --decorate --branches'
 alias back='git checkout -'
 alias goc='git checkout -b'
+alias wip='git add . && git commit m "wip"'
 alias tinker="artisan tinker"
 alias outdated="composer outdated --direct"
 
@@ -178,6 +179,8 @@ alias wa='npm run watch:admin'
 alias wall='npm run watch'
 
 alias sail='bash vendor/bin/sail'
+
+alias prunedocker='docker system prune --volumes'
 
 alias boooster='lerna clean && lerna bootstrap && lerna run clean && lerna run compile'
 
