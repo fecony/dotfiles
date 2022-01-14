@@ -162,7 +162,7 @@ alias gcz='git add . && git cz'
 alias gitp='git log --oneline --all --graph --decorate --branches'
 alias back='git checkout -'
 alias goc='git checkout -b'
-alias wip='git add . && git commit m "wip"'
+alias wip='git commit -am "wip"'
 alias tinker="artisan tinker"
 alias outdated="composer outdated --direct"
 
