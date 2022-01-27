@@ -182,7 +182,7 @@ alias sail='bash vendor/bin/sail'
 
 alias prunedocker='docker system prune --volumes'
 
-alias boooster='lerna clean && lerna bootstrap && lerna run clean && lerna run compile'
+alias booster='lerna clean && lerna bootstrap && lerna run clean && lerna run compile'
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
