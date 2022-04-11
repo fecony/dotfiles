@@ -184,6 +184,8 @@ alias prunedocker='docker system prune --volumes'
 
 alias booster='lerna clean && lerna bootstrap && lerna run clean && lerna run compile'
 
+alias makepasswd="pwgen -Bscny 25 1"
+
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
