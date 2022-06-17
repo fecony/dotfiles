@@ -4,6 +4,7 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/flutter/bin:$PATH"
 export PATH="$HOME/.symfony/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 export COMPOSER_MEMORY_LIMIT=-1
 
 # Path to your oh-my-zsh installation.
@@ -156,13 +157,12 @@ RPROMPT='%{$fg[yellow]%}[%D{%H:%M:%S}] '$RPROMPT
 alias ls='ls -G'
 alias ls='ls -G'
 alias space='du -cksh ./* | sort -rn'
-alias python='python3'
 alias gac='git add . && git commit -a -m '
 alias gcz='git add . && git cz'
 alias gitp='git log --oneline --all --graph --decorate --branches'
 alias back='git checkout -'
 alias goc='git checkout -b'
-alias wip='git commit -am "wip"'
+alias wip='git add . && git commit -am "chore: wip"'
 alias tinker="artisan tinker"
 alias outdated="composer outdated --direct"
 
@@ -230,3 +230,4 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 [ -f "/Users/richard/.ghcup/env" ] && source "/Users/richard/.ghcup/env" # ghcup-env
+export PATH="${HOME}/.pyenv/shims:${PATH}"
