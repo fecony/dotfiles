@@ -163,6 +163,7 @@ alias gitp='git log --oneline --all --graph --decorate --branches'
 alias back='git checkout -'
 alias goc='git checkout -b'
 alias wip='git add . && git commit -am "chore: wip"'
+alias init='git add . && git commit -am "Initial Commit"'
 alias tinker="artisan tinker"
 alias outdated="composer outdated --direct"
 
