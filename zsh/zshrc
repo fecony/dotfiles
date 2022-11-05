@@ -167,23 +167,14 @@ alias init='git add . && git commit -am "Initial Commit"'
 alias tinker="artisan tinker"
 alias outdated="composer outdated --direct"
 
-# Arbory/Laravel commands
+# Laravel commands
 alias cc='php artisan cache:clear && php artisan config:clear'
 alias trans='php artisan translator:flush && php artisan translator:load'
 alias migrate='php artisan migrate'
 alias mmake='artisan make:migration '
-alias ball='npm run dev'
-alias bf='npm run dev:front'
-alias ba='npm run dev:admin'
-alias wf='npm run watch:front'
-alias wa='npm run watch:admin'
-alias wall='npm run watch'
-
 alias sail='bash vendor/bin/sail'
 
 alias prunedocker='docker system prune --volumes'
-
-alias booster='lerna clean && lerna bootstrap && lerna run clean && lerna run compile'
 
 alias makepasswd="pwgen -Bscny 25 1"
 
@@ -195,6 +186,7 @@ prompt_context() {
 export PATH="/usr/local/sbin:$PATH"
 
 eval $(thefuck --alias)
+eval "$(zoxide init zsh)"
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/richard/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
@@ -208,7 +200,6 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/richard/Library/Caches/heroku/autocomplete/zsh_s
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# export PATH="/usr/local/opt/valet-php@7.3/bin:$PATH"
 
 autoload -U add-zsh-hook
 load-nvmrc() {
