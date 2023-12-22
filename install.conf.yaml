@@ -6,11 +6,10 @@
 
 - link:
     ~/.gitconfig: git/gitconfig
-    ~/.zshrc: zsh/zsh.sh
+    ~/.zshrc: zsh/zshrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
 - create:
     - ~/Code
-    - ~/Sites

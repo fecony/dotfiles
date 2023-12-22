@@ -5,6 +5,7 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/flutter/bin:$PATH"
 export PATH="$HOME/.symfony/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export PATH="/Users/richard/.deno/bin:$PATH"
 export COMPOSER_MEMORY_LIMIT=-1
 
 # Path to your oh-my-zsh installation.
@@ -222,4 +223,29 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 [ -f "/Users/richard/.ghcup/env" ] && source "/Users/richard/.ghcup/env" # ghcup-env
+
 export PATH="${HOME}/.pyenv/shims:${PATH}"
+export PATH="$PATH:/Users/richard/.local/bin"
+
+# pnpm
+export PNPM_HOME="/Users/richard/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# BEGIN SNIPPET: Platform.sh CLI configuration
+HOME=${HOME:-'/Users/richard'}
+export PATH="$HOME/"'.platformsh/bin':"$PATH"
+if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+
+# bun completions
+[ -s "/Users/richard/.bun/_bun" ] && source "/Users/richard/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH=$PATH:"$HOME/.zig/zig:$PATH"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
