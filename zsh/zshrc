@@ -245,7 +245,3 @@ if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/she
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/.zig:$PATH"
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
